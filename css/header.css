@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header */
+  header {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; 
+  }
+  
+  /* Barre de navigation */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+  }
+  nav{
+    display: flex;
+  align-items: center;
+  }
+  .logo {
+    flex: 1;
+    padding-left: 20px; /* Add some padding to create space between the logo and menu items */
+  }
+  .logo img {
+    height: 80px; 
+  }
+  
+  
+  nav ul li {
+    margin-left: 180px;
+    flex: 1;
+    text-align: center;
+  }
+  
+  nav ul li a {
+
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    transition: transform 0.3s; /* Transition pour l'effet de mise à l'échelle au survol */
+  }
+  
+  nav ul li a:hover {
+    transform: scale(1.1); /* Mise à l'échelle au survol */
+    background-color: #ccc;
+    padding: 5px;
+    border-radius: 15%;
+  }
+  
+  /* Styles pour les appareils mobiles et tablettes */
+  @media only screen and (max-width: 768px) {
+    nav ul {
+      flex-direction: column; /* Affichage des éléments de navigation en colonne */
+      height: auto; /* Hauteur automatique pour s'adapter au contenu */
+    }
+    
+    nav ul li {
+      margin-top: 10px; /* Marge supérieure entre les éléments de navigation */
+    }
+  }
