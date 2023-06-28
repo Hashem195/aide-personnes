@@ -34,6 +34,22 @@ footer {
     flex-basis: 23%;
     margin-bottom: 30px;
   }
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #007bff; 
+    transform: scale(1.2);
+  }
   .footer-section p{
     font-weight: bold;
   }
@@ -80,7 +96,7 @@ footer {
   }
   
   button[type="submit"]:hover {
-    background-color: #333;
+    background-color: #007bff;
   }
   
   .footer-line:last-child {
