@@ -1,9 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+
   /* Header */
   header {
     background: transparent;
@@ -51,7 +46,7 @@
   nav ul li a:hover {
     transform: scale(1.1); /* Mise à l'échelle au survol */
     background-color: #ccc;
-    padding: 5px;
+    padding: 15px;
     border-radius: 15%;
   }
   
