@@ -34,7 +34,9 @@ footer {
     flex-basis: 23%;
     margin-bottom: 30px;
   }
-  
+  .footer-section p{
+    font-weight: bold;
+  }
   .section-line {
     border: none;
     border-bottom: 1px solid #ccc;
