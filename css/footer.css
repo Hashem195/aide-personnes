@@ -1,0 +1,97 @@
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    
+  }
+  
+  .footer-logo {
+    text-align: center;
+  }
+  #footer-logo{
+    height: 100px;
+  }
+  .footer-line {
+    border: none;
+    border-top: 2px solid #ccc;
+    margin: 20px auto;
+    max-width: 200px;
+  }
+  .pergraph{
+    text-align: center;
+  }
+  .copyright{
+    text-align: center;
+  }
+  .footer-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex-basis: 23%;
+    margin-bottom: 30px;
+  }
+  
+  .section-line {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  ul li a {
+    
+    text-decoration: none;
+    color: #000;
+  }
+  
+  form {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="email"] {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  button[type="submit"] {
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #333;
+  }
+  
+  .footer-line:last-child {
+    margin-top: 20px;
+  }
+  
+  .footer-line:first-child,
+  .footer-line:last-child {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 768px) {
+    .footer-section {
+      flex-basis: 48%;
+    }
+  }
