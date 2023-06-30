@@ -1,4 +1,5 @@
 body{
+<<<<<<< Updated upstream
     margin:10px;
     height: 100%;
 }
@@ -7,3 +8,27 @@ body{
     display: flex;
    
   }
+=======
+    margin:30px;
+
+    
+}
+.container .activity{
+    display: flex;
+  }
+  
+  .description-wrapper {
+    float: left;
+    margin-right: 20px; /* Ajustez la marge selon vos besoins */
+  }
+  
+  .description-right {
+    flex-grow: 1;
+  }
+  
+  #aperçu {
+    float: right;
+  }
+  
+  
+>>>>>>> Stashed changes
