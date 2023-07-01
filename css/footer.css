@@ -102,6 +102,7 @@ footer {
   
   .footer-line:last-child {
     margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   .footer-line:first-child,
