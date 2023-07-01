@@ -26,11 +26,11 @@
   }
   
   .column img {
-    height: 350px;
+    min-height: 400px;
+    max-width: 600px;
     display: block;
     margin:0 auto;
     width: 100%;
-    max-width: 500px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(31, 30, 30, 0.5);
   }
