@@ -11,6 +11,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="manifest" href="favicon/site.webmanifest">
+    <script defer src="js/script.js"></script>
+    <script defer src="js/editor.js"></script>
 </head>
 <body>
     <header>
@@ -29,10 +31,37 @@
             </ul>
         </nav>
     </header>
-
-
-
-
+    <div class="container">
+    <main>
+        <section id="memory-section">
+          <h2>Souvenirs</h2>
+    
+          <div id="memory-input">
+            <input type="text" id="memory-text" placeholder="Enregistrer ...">
+            <input type="file" id="memory-file">
+            <button id="add-memory-btn">Add Memory</button>
+          </div>
+    
+          <ul id="memory-list"></ul>
+        </section>
+      </main>
+      <div class="editor-container">
+        <div id="editor" contenteditable="true" placeholder=" Écrivez votre souvenir ici..."></div>
+        <input type="file" id="photo-upload" accept="image/*">
+        <button id="save-memory-btn">Enregistrer</button>
+        <button id="view-memories-btn">Voir les souvenirs</button>
+      </div>
+      
+      <div id="popup" class="popup">
+        <span id="popup-message">Il n'y a pas de souvenirs enregistrés.</span>
+        <span id="popup-close">&times;</span>
+      </div>
+      
+      <ul id="memory-list"></ul>
+      
+      
+    </div>
+   
     <footer>
         <div class="footer-logo">
             <a href="index.html"><img id="footer-logo" src="imgs/logo-nobg.png" alt="Logo"></a>
@@ -83,6 +112,6 @@
             &copy; 2023 Bedriendev. Tous droits réservés.
         </p>
     </footer>
-
+    
 </body>
 </html>
