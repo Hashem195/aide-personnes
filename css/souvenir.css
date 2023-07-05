@@ -5,7 +5,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 10px;
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: #f8f8f8;
@@ -13,14 +13,14 @@ body {
 
 .container {
   display: flex;
-  height: 100vh;
   justify-content: space-between;
-  padding-right: 20px; /* Add padding to create space on the right side */
+  height: 100vh;
+  
 }
 
 main {
-  height: 60%;
-  width: 40%;
+  height: 100%;
+  width: 50%;
   max-width: 600px;
   padding: 20px;
 }
@@ -36,13 +36,20 @@ h2 {
   margin-bottom: 10px;
 }
 
-#memory-input input[type="text"],
-#memory-input input[type="file"] {
+#memory-input input[type="text"]
+ {
   flex: 1;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ddd;
   border-radius: 4px;
+}
+
+#memory-input #memory-file{
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #333;
 }
 
 #memory-input input[type="file"] {
@@ -115,6 +122,7 @@ h2 {
   cursor: pointer;
 }
 
+
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -129,30 +137,41 @@ h2 {
   }
 }
 
-/* CSS pour l'éditeur */
+/* CSS for the editor */
 
 .editor-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 20px;
+  width: 50%;
 }
 
 #editor {
   width: 100%;
-  min-height: 150px;
+  min-height: 250px;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 16px;
   color: #333;
   margin-bottom: 10px;
-  
 }
-
+#editor::before {
+  content: attr(placeholder); /* Add a pseudo-element for the placeholder text */
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #999;
+  pointer-events: none; /* Ensure the pseudo-element does not interfere with text input */
+}
+#editor:focus::before {
+  display: none; /* Hide the placeholder when the editor is focused */
+}
 #photo-upload {
+  display: none;
   margin-bottom: 10px;
-  
 }
 
 #save-memory-btn,
@@ -165,7 +184,7 @@ h2 {
   border-radius: 4px;
   cursor: pointer;
   margin-right: 10px;
-  margin-bottom: 10px; /* Add margin bottom to create space between buttons */
+  margin-bottom: 10px;
 }
 
 #popup {
@@ -202,7 +221,6 @@ h2 {
   list-style: none;
   padding: 0;
   margin: 0;
- 
 }
 
 .memory-item {
@@ -223,14 +241,50 @@ h2 {
   max-width: 100%;
   margin-bottom: 10px;
 }
-
+#photo-upload + label {
+  /* Style the label for the photo upload button */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 /* Additional adjustments */
 
 #popup-close {
-  top: 5px; /* Adjust the position of the close icon */
+  top: 5px;
   right: 5px;
 }
 
 #memory-input button {
-  margin-top: 10px; /* Add margin top to create space between buttons */
+  margin-top: 10px;
+}
+.file-upload-container {
+  display: flex;
+  align-items: center;
+}
+
+.file-upload-container input[type="file"] {
+  display: none;
+}
+
+.file-upload-container label {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#memory-file-label {
+  margin-left: 0; /* Adjust the value as needed */
+}
+
+#photo-upload-label {
+  margin-left: 0; /* Adjust the value as needed */
 }
