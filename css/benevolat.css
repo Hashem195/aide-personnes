@@ -29,5 +29,52 @@
   .texto{
     color: #666;
   }
-  
+  .Inscription{
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .formu {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    padding: 5px;
+    border-radius: 10px;
+}
+.name{
+    margin: 6px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.name div{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.button{
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+input{
+    height: 30px;
+    border-radius: 6px;
+}
+label{
+    margin-bottom: 6px;
+}
+
+
+.formu{
+    display: none;
+}
   

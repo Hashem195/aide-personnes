@@ -9,7 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
   var memoryFile = document.getElementById('memory-file'); // Input pour le fichier du souvenir
   var addMemoryButton = document.getElementById('add-memory-btn'); // Bouton pour ajouter le souvenir
   var memoryList = document.getElementById('memory-list'); // Liste des souvenirs
-  
+  // Récupération des éléments du DOM pour les formulaires du Bénévolat
+  var inscription = document.querySelector(".Inscription"); //
+  var form = document.querySelector(".formu"); //
+  var inscrit= document.querySelector(".button"); //
   // Ajout d'un événement lors du clic sur le bouton "Sauvegarder le souvenir" (côté éditeur)
   saveMemoryBtn.addEventListener('click', function() {
     var memoryText = editor.innerHTML; // Texte du souvenir
@@ -113,3 +116,10 @@ document.addEventListener('DOMContentLoaded', function() {
     memoryFile.value = '';
   });
 });
+
+//Ajout des évènements concernant le formulaire du bénévolat
+Inscription.addEventListener('click',function(){form.style.display='block';});//Faire apparaitre le formulaire
+
+
+inscrit.addEventListener('submit',function(){form.style.display='none';});// Faire disparaitre le formulaire
+
