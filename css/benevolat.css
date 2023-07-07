@@ -29,23 +29,82 @@
   .texto{
     color: #666;
   }
-  .Inscription{
+  .Inscription {
     border-radius: 5px;
-    margin-left: 5px;
+    margin-left: 0px;
     padding: 10px 20px;
     background-color: #000;
     color: #fff;
     border: none;
     cursor: pointer;
+    border: none;
   }
+  .clean{
+    border-radius: 5px;
+    margin-left: 0px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border: none;
+  }
+   .course{
+    border-radius: 5px;
+    margin-left: 0px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border: none;
+  }
+    .bien{
+      border-radius: 5px;
+      margin-left: 0px;
+      padding: 10px 20px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border: none;
+    }
 
-  .formu {
+
+.con{
+  display: flex;
+  margin: 6px;
+  text-align: center;
+}
+  .formu .formu1 .formu2 .formu3{
     display: flex;
     flex-direction: column;
-    background-color: gray;
+    background-color: rgba(231, 239, 239, 0.973);
     padding: 5px;
     border-radius: 10px;
 }
+.formu1{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(231, 239, 239, 0.973);
+  padding: 5px;
+  border-radius: 10px;
+}
+.formu2{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(231, 239, 239, 0.973);
+  padding: 5px;
+  border-radius: 10px;
+}
+ .formu3{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(231, 239, 239, 0.973);
+  padding: 5px;
+  border-radius: 10px;
+}
+
 .name{
     margin: 6px;
     width: 90%;
@@ -62,6 +121,36 @@
 .button{
     text-align: center;
     border-radius: 10px;
+}
+.button1{
+  text-align: center;
+  border-radius: 10px;
+}
+.button2{
+  text-align: center;
+  border-radius: 10px;
+}
+.button3{
+  text-align: center;
+  border-radius: 10px;
+}
+
+.Number .Disponinible{
+  margin: 6px;
+}
+.Disponinible div{
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+
+}
+.Number div{
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
 }
 
 
