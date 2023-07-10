@@ -114,9 +114,46 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-//Ajout des évènements concernant le formulaire du bénévolat
-Inscription.addEventListener('click',function(){form.style.display='block';});//Faire apparaitre le formulaire
+// Get the popup element and close button
+const popup = document.getElementById('popup');
+const closeButton = document.getElementById('popup-close');
+
+// Function to show the popup with a message
+function showPopup(message) {
+  const popupMessage = document.getElementById('popup-message');
+  popupMessage.textContent = message;
+  popup.style.display = 'block';
+}
 
 
-inscrit.addEventListener('submit',function(){form.style.display='none';});// Faire disparaitre le formulaire
+// Fonction pour afficher la fenêtre contextuelle avec un message
+function showPopup(message) {
+  const popupMessage = document.getElementById('popup-message');
+  popupMessage.textContent = message;
+  popup.style.display = 'block';
+}
+
+// Fonction pour fermer la fenêtre contextuelle
+function closePopup() {
+  popup.style.display = 'none';
+}
+
+// Écouteur d'événements pour le bouton de fermeture
+closeButton.addEventListener('click', closePopup);
+
+// Obtenez les éléments de bouton
+const viewMemoriesButton = document.getElementById('view-memories-btn');
+const memoryList = document.getElementById('memory-list');
+
+// Écouteur d'événements pour le bouton "Voir les souvenirs"
+viewMemoriesButton.addEventListener('click', function() {
+  if (memoryList.childElementCount === 0) {
+    showPopup("Il n'y a pas de souvenirs enregistrés.");
+  } else {
+    // S'il y a des souvenirs, mettre le focus sur le premier
+    const premierSouvenir = memoryList.firstChild;
+    premierSouvenir.scrollIntoView({ behavior: 'smooth' });
+  }
+});
+
 
