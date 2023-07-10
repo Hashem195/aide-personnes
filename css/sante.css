@@ -1,129 +1,135 @@
-
-
 * {
-    
     padding: 0px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
   
-  
   body {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     font-family: 'Oswald', sans-serif;
   }
   
- 
-  
   .slideshow-container {
-      max-width: 980px;
-      position: relative;
-      margin: auto;
-    }
-    
-  
-    .mySlides {
-      
-      max-height: 550px;
-      object-fit: cover;
-      overflow: hidden;
-      display: none;
-    }
-    .mySlides .mypics{
-      
-      height: 600px;
-      object-fit: fill;
-      user-select: none;
-      width: calc(100% / 2);
-      margin-left: 14px;
-      border-radius: 25px;
-    }
-    
-    .prev , .next {
-      cursor: pointer;
-      top: 50%;
-      position: absolute;
-      background:rgba(255, 255, 255, 0.493);
-      height: 44px;   
-      width: 44px;
-      line-height: 44px;
-      text-align: center;
-      border-radius: 50%;
-      font-size: 1.2rem;
-      transform: translateY(-50%);
-      
-    }
-    .prev{
-      left: -12px;
-    }
-   
-    .next {
-      right:459px;
-      border-radius: 44px;
-    }
-    
-   
-    .prev:hover, .next:hover {
-      
-      background-color: rgba(0, 0, 0, 0.342);
-    }
-    
-    
-    .text {
-      
-      color: #000000;
-      font-size: 20px;
-      padding:14px;
-      width: 300px;
-      height: 350px;
-      text-align: center;
-      float: right;
-      border-radius: 10px;
-      object-fit: contain;
-      overflow: auto ;
-      margin: 40px;
-    }
-    .text:hover{
-      background-color: hsla(0, 0%, 34%, 0.369);
-    }
-    .text::-webkit-scrollbar{
-      width: 12px;
-      background-color:transparent;
-    }
-    .text::-webkit-scrollbar-thumb {
-      border-radius: 20px;
-      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.650);
-        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.650); 
+    max-width: 980px;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
   }
+  
+  .mySlides {
+    max-height: 550px;
+    object-fit: cover;
+    overflow: hidden;
+    display: none;
+  }
+  
+  .mySlides .mypics {
+    height: 600px;
+    object-fit: fill;
+    user-select: none;
+    width: calc(100% / 2);
+    margin-left: 14px;
+    border-radius: 25px;
+  }
+  
+  .mypics {
+    image-rendering: smooth;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    top: 50%;
+    position: absolute;
+    background: rgba(153, 152, 152, 0.493);
+    height: 44px;
+    width: 44px;
+    line-height: 44px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transform: translateY(-50%);
+  }
+  
+  .prev {
+    left: -12px;
+  }
+  
+  .next {
+    right: 12px; /* Adjust this value as needed */
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.342);
+  }
+  
+  .text {
+    color: #000000;
+    font-size: 20px;
+    padding: 14px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    float: right;
+    border-radius: 10px;
+    object-fit: contain;
+    overflow: auto;
+    margin: 40px;
+  }
+  
+  .text:hover {
+    background-color: hsla(0, 0%, 34%, 0.369);
+  }
+  
+  .text::-webkit-scrollbar {
+    width: 12px;
+    background-color: transparent;
+  }
+  
+  .text::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.65);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.65);
+  }
+  
   .text::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.650);
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.650); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.65);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.65);
     border-radius: 20px;
   }
-    
-    .fade {
-      animation-name: fade;
-      animation-duration: 1.5s;
+  
+  .fade {
+    animation-timing-function: ease-in-out;
+  }
+  
+  .slideshow-container,
+  .mySlides {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  @media screen and (max-width: 900px) {
+    .slideshow-container .mypics {
+      width: calc(100% / 2);
     }
     
-    @keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
+    .next {
+      right: 12px;
     }
-    @media screen and (max-width:900px){
-      .slideshow-container .mypics{
-          width: calc(100% / 2);
-  
-      }
   }
-  @media screen and (max-width:650px){
-      .slideshow-container .mypics {
-          width:100%;
   
-      }
+  @media screen and (max-width: 650px) {
+    .slideshow-container .mypics {
+      width: 100%;
+    }
+    
+    .next {
+      right: 6px;
+    }
   }
+  

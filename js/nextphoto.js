@@ -1,12 +1,12 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+// Contrôles suivant/précédent
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
+// Contrôles d'images miniatures
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -24,5 +24,4 @@ function showSlides(n) {
     dots[i].mySlides = dots[i].mySlides.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
-  
 }
