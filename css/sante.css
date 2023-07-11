@@ -13,12 +13,38 @@
     min-height: 100vh;
     font-family: 'Oswald', sans-serif;
   }
+  .container-intro{
+    margin: 20px;
+    display: grid; 
+    grid-template-columns: auto auto; 
+    gap: 30px;
+  }
+  h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  .intro img { 
+    height: 380px;
+    width: 500px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .pergraph{
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-family:'Times New Roman', Times, serif;
+    padding-top: 40px;
+  }
   
   .slideshow-container {
     max-width: 980px;
     position: relative;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 30px;
   }
   
   .mySlides {
@@ -38,6 +64,7 @@
   }
   
   .mypics {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     image-rendering: smooth;
   }
   
