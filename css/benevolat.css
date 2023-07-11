@@ -1,169 +1,127 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  html,body{
-    margin:15px;
-    background: #eeeeee;
-  }
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  h1{
-    border:1px #000;
-    border-radius: 5px;
-    margin-top:30px;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-   h2 {
-    text-align: center;
-    margin: 20px;
-    color: #000000;
-    font-weight: bold;
-  }
-  
-  .texto{
-    color: #666;
-  }
-  .Inscription {
-    border-radius: 5px;
-    margin-left: 0px;
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border: none;
-  }
-  .clean{
-    border-radius: 5px;
-    margin-left: 0px;
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border: none;
-  }
-   .course{
-    border-radius: 5px;
-    margin-left: 0px;
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border: none;
-  }
-    .bien{
-      border-radius: 5px;
-      margin-left: 0px;
-      padding: 10px 20px;
-      background-color: #000;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      border: none;
-    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html, body {
+  margin: 15px;
+  background: #eeeeee;
+}
 
-.con{
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+ font-family: 'Courier New', Courier, monospace;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.texto {
+  color: #666;
+}
+
+.Inscription,
+.clean,
+.course,
+.bien {
+ 
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  outline: none !important; 
+  cursor: pointer;
+  box-shadow: none !important;
+}
+
+.con {
   display: flex;
   margin: 6px;
   text-align: center;
 }
-  .formu .formu1 .formu2 .formu3{
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(231, 239, 239, 0.973);
-    padding: 5px;
-    border-radius: 10px;
-}
-.formu1{
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(231, 239, 239, 0.973);
-  padding: 5px;
-  border-radius: 10px;
-}
-.formu2{
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(231, 239, 239, 0.973);
-  padding: 5px;
-  border-radius: 10px;
-}
- .formu3{
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(231, 239, 239, 0.973);
-  padding: 5px;
-  border-radius: 10px;
-}
-
-.name{
-    margin: 6px;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-}
-.name div{
-    margin-left: 5px;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
-.button{
-    text-align: center;
-    border-radius: 10px;
-}
-.button1{
-  text-align: center;
-  border-radius: 10px;
-}
-.button2{
-  text-align: center;
-  border-radius: 10px;
-}
-.button3{
-  text-align: center;
-  border-radius: 10px;
-}
-
-.Number .Disponinible{
-  margin: 6px;
-}
-.Disponinible div{
+.con .contact-link{
   margin-left: 5px;
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #000;
+  text-decoration: none;
 }
-.Number div{
+.formu,
+.formu1,
+.formu2,
+.formu3 {
+  display: none;
+  flex-direction: column;
+  background-color: rgba(231, 239, 239, 0.973);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.name {
+  margin: 6px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name div {
   margin-left: 5px;
   display: flex;
   flex-direction: column;
   width: 50%;
-
 }
 
-
-input{
-    height: 30px;
-    border-radius: 6px;
+.button,
+.button1,
+.button2,
+.button3 {
+  text-align: center;
+  border-radius: 10px;
 }
-label{
-    margin-bottom: 6px;
+
+.Number,
+.Disponinible {
+  margin: 6px;
 }
 
-
-.formu{
-    display: none;
+.Disponinible div {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
 }
-  
+
+.Number div {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+input {
+  padding: 5px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+label {
+  margin-bottom: 6px;
+}
+
+.formu {
+  display: none;
+}
