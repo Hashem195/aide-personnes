@@ -76,7 +76,7 @@ footer {
     color: #000;
   }
   
-  form {
+  #footer-form {
     display: flex;
     align-items: center;
   }
