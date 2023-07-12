@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Contact</title>
 </head>
+
 <body>
-    
-  <!-- Header section -->
-  <header>
-    <nav>
-      <!-- logo section -->
-      <div class="logo">
-        <a href="index.html"><img src="imgs/logo.gif" alt="Logo"></a>
-      </div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tuto.html">Tuto</a></li>
-        <li><a href="souvenir.html">Souvenir</a></li>
-        <li><a href="benevolat.html">Bénévolat</a></li>
-        <li><a href="sante.html">Santé</a></li>
-        <li><a href="contact.html">Connection</a></li>
-      </ul>
-    </nav>
-  </header>
+
+    <!-- Header section -->
+    <header>
+        <nav>
+            <!-- logo section -->
+            <div class="logo">
+                <a href="index.html"><img src="imgs/logo.gif" alt="Logo"></a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tuto.html">Tuto</a></li>
+                <li><a href="souvenir.html">Souvenir</a></li>
+                <li><a href="benevolat.html">Bénévolat</a></li>
+                <li><a href="sante.html">Santé</a></li>
+                <li><a href="contact.html">Connection</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="container">
         <div class="form">
             <div class="contact-info">
                 <h3 class="title">Rester en contact</h3>
-                <p class="text">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores earum obcaecati voluptatem totam maxime omnis, repellat soluta quasi hic est beatae natus quaerat tempora accusamus error, tempore voluptatum expedita culpa.</p>
+                <p class="text">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores earum obcaecati
+                    voluptatem totam maxime omnis, repellat soluta quasi hic est beatae natus quaerat tempora accusamus
+                    error, tempore voluptatum expedita culpa.</p>
                 <div class="info">
                     <div class="information">
                         <i class="fa-solid fa-map-location-dot" class="icon"></i>
@@ -47,42 +55,41 @@
                         <p>+33 - 788886669</p>
                     </div>
                 </div>
-                <div class="social-media"></div>
-                
-                <div class="social-icons2">
-                    <a href="#" target="_blank">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-
+                <div class="social-media">
+                    <div class="social-icons2">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="contact-form">
 
+            <div class="contact-form">
                 <form action="contact.html" method="get">
                     <h3 class="title">Contactez Nous</h3>
-                    <div class="input-container ">
-                        <input type="text" name="name" class="input" required>
+                    <div class="input-container">
+                        <input type="text" id="name" name="name" class="input" required>
                         <label for="name">Username</label>
                         <span>Username</span>
                     </div>
                     <div class="input-container">
-                        <input type="email" name="email" class="input" required>
+                        <input type="email" id="email" name="email" class="input" required>
                         <label for="email">Email</label>
                         <span>Email</span>
                     </div>
                     <div class="input-container">
-                        <input type="tel" name="phone" class="input" required>
-                        <label for="tel">Phone</label>
+                        <input type="tel" id="phone" name="phone" class="input" required>
+                        <label for="phone">Phone</label>
                         <span>Phone</span>
                     </div>
                     <div class="input-container textarea">
-                        <textarea name="message" class="input"></textarea>
+                        <textarea id="message" name="message" class="input"></textarea>
                         <label for="message">Message</label>
                         <span>Message</span>
                     </div>
@@ -93,58 +100,59 @@
         </div>
     </div>
 
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
 
     <!-- Footer section -->
     <footer>
         <div class="footer-logo">
-          <a href="index.html"><img id="footer-logo" src="imgs/logo-nobg.png" alt="Logo"></a>
+            <a href="index.html"><img id="footer-logo" src="imgs/logo-nobg.png" alt="Logo"></a>
         </div>
         <hr class="footer-line">
         <div class="footer-sections">
-          <div class="footer-section">
-            <h3>A Propos</h3>
-            <div class="section-line"></div>
-            <div class="pergraph">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+            <div class="footer-section">
+                <h3>A Propos</h3>
+                <div class="section-line"></div>
+                <div class="pergraph">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                </div>
             </div>
-          </div>
-          <div class="footer-section">
-            <h3>Liens</h3>
-            <div class="section-line"></div>
-            <ul>
-              <li><a href="tuto.html">Tuto</a></li>
-              <li><a href="souvenir.html">Souvenir</a></li>
-              <li><a href="benevolat.html">Bénévolat</a></li>
-              <li><a href="sante.html">Santé</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h3>Contact</h3>
-            <div class="section-line"></div>
-            <p>Adresse : 102 rue de cc , Lyon</p>
-            <p>Téléphone : +33 12 23 89 92 91</p>
-            <p>Email : enterprise@eur.fr</p>
-          </div>
-          <div class="footer-section">
-            <h3>Newsletter</h3>
-            <div class="section-line"></div>
-            <form>
-              <input type="email" placeholder="Votre email">
-              <button type="submit">S'abonner</button>
-            </form>
-            <div class="social-icons">
-              <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <div class="footer-section">
+                <h3>Liens</h3>
+                <div class="section-line"></div>
+                <ul>
+                    <li><a href="tuto.html">Tuto</a></li>
+                    <li><a href="souvenir.html">Souvenir</a></li>
+                    <li><a href="benevolat.html">Bénévolat</a></li>
+                    <li><a href="sante.html">Santé</a></li>
+                </ul>
             </div>
-          </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <div class="section-line"></div>
+                <p>Adresse : 102 rue de cc, Lyon</p>
+                <p>Téléphone : +33 12 23 89 92 91</p>
+                <p>Email : enterprise@eur.fr</p>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <div class="section-line"></div>
+                <form id="footer-form">
+                    <input type="email" placeholder="Votre email">
+                    <button type="submit">S'abonner</button>
+                </form>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
         </div>
         <hr class="footer-line">
         <p class="copyright">
-          &copy; 2023 Bedriendev. Tous droits réservés.
+            &copy; 2023 Bedriendev. Tous droits réservés.
         </p>
-      </footer>
+    </footer>
 </body>
+
 </html>
