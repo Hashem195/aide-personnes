@@ -11,10 +11,11 @@ body {
   
   .container {
       position: relative;
-      min-height: 70vh;
+      min-height: 75vh;
       padding:2rem;
       overflow: hidden;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
   }
@@ -22,8 +23,7 @@ body {
       
       width: 100%;
       max-width: 820px;
-      
-      background-color: #3c529166;
+      background-color: #9ca7c766;
       border-radius: 10px;
       box-shadow:0 0 20px 1px rgba(0,0,0,0.1) ;
       z-index: 1000;
@@ -48,10 +48,12 @@ body {
   }
   
   form{
+    
       padding: 1.3rem 1.2rem;
       z-index: 10;
       overflow: hidden;
       position: relative;
+      grid-template-columns: 1fr 1fr;
   }
   .title {
       color: rgb(255, 255, 255);
