@@ -72,3 +72,23 @@ function isFormValid(form) {
     }
     return isValid;
 }
+document.addEventListener('DOMContentLoaded', function () {
+    const formTriggers = document.querySelectorAll('.form-trigger');
+    const forms = document.querySelectorAll('.formu, .formu1, .formu2, .formu3');
+    const closeButtons = document.querySelectorAll('.close-button');
+
+    formTriggers.forEach((trigger, index) => {
+      trigger.addEventListener('click', () => {
+        forms.forEach((form, formIndex) => {
+          form.style.display = index === formIndex ? 'block' : 'none';
+        });
+      });
+    });
+
+    closeButtons.forEach((closeButton) => {
+      closeButton.addEventListener('click', () => {
+        const form = closeButton.closest('form');
+        form.style.display = 'none';
+      });
+    });
+  });

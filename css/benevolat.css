@@ -72,6 +72,7 @@ h2 {
 }
 
 .name {
+  padding:5px;
   margin: 6px;
   width: 90%;
   display: flex;
@@ -92,7 +93,14 @@ h2 {
   text-align: center;
   border-radius: 10px;
 }
-
+.close-button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding:10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
 .Number,
 .Disponinible {
   margin: 6px;
