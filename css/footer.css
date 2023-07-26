@@ -113,7 +113,22 @@ footer {
   
   /* Responsive styles */
   @media only screen and (max-width: 768px) {
+    
     .footer-section {
       flex-basis: 48%;
+    }
+   
+  }
+  @media only screen and (max-width: 576px) {
+    .footer-sections {
+      flex-direction: column;
+    }
+  
+    .footer-section {
+      flex-basis: 100%;
+    }
+    
+    body{
+      width: 100%;
     }
   }
