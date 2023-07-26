@@ -101,6 +101,9 @@ h2 {
   border-radius: 3px;
   cursor: pointer;
 }
+.close-button:hover{
+  background-color: rgb(0, 110, 255);
+}
 .Number,
 .Disponinible {
   margin: 6px;
