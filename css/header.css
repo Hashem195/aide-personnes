@@ -51,13 +51,66 @@
   }
   
   /* Styles pour les appareils mobiles et tablettes */
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
+   
+    /* Hide regular menu items */
     nav ul {
-      flex-direction: column; /* Affichage des éléments de navigation en colonne */
-      height: auto; /* Hauteur automatique pour s'adapter au contenu */
+      display: none;
     }
-    
-    nav ul li {
-      margin-top: 10px; /* Marge supérieure entre les éléments de navigation */
+  
+    /* Show mobile menu icon */
+    .mobile-menu {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: flex-end;
+    }
+  
+    .menu-icon {
+      cursor: pointer;
+      padding: 10px;
+      position: fixed;
+      right:0;
+    }
+  
+    .menu-icon span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: #000;
+      margin: 4px 0;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+  
+    /* Rotate and change background color on click */
+    .menu-icon.active span:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .menu-icon.active span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-icon.active span:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  
+    /* Show the mobile menu items when the button is clicked */
+    .menu-items {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      padding: 0;
+    }
+  
+    .menu-items.active {
+      display: flex;
+    }
+  
+    .menu-items li {
+      text-align: center;
+      padding: 10px;
     }
   }
