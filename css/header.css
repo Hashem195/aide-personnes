@@ -5,50 +5,55 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px; 
+    padding: 10px 20px;
   }
   
-  /* Barre de navigation */
   nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 50px;
-  }
-  nav{
-    display: flex;
-  align-items: center;
-  }
-  .logo {
-    flex: 1;
-    padding-left: 20px; /* Add some padding to create space between the logo and menu items */
-  }
-  .logo img {
-    height: 80px; 
+    justify-content: center; /* Center the menu items horizontally */
+    align-items: center; /* Center the menu items vertically */
+    height: 100%;
+    flex-grow: 1;
   }
   
+  nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .logo {
+    padding-left: 20px; /* Add space between the logo and menu items */
+  }
+  
+  .logo img {
+    height: 80px;
+  }
   
   nav ul li {
-    margin-left: 180px;
-    flex: 1;
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: row;
     text-align: center;
+    padding: 0 10px;
   }
   
   nav ul li a {
-
     text-decoration: none;
     color: #000;
     font-size: 18px;
-    transition: transform 0.3s; /* Transition pour l'effet de mise à l'échelle au survol */
+    transition: transform 0.3s;
   }
   
   nav ul li a:hover {
-    transform: scale(1.1); /* Mise à l'échelle au survol */
+    transform: scale(1.1);
     background-color: #ccc;
     padding: 15px;
     border-radius: 15%;
   }
+  
+  
   
   /* Styles pour les appareils mobiles et tablettes */
   @media (max-width: 768px) {
@@ -68,7 +73,8 @@
     .menu-icon {
       cursor: pointer;
       padding: 10px;
-      position: fixed;
+      position: absolute;
+      top:1.8rem;
       right:0;
     }
   
@@ -98,8 +104,8 @@
     .menu-items {
       display: none;
       flex-direction: column;
-      position: absolute;
-      top: 70px;
+      position: relative;
+      top: 50px;
       left: 0;
       width: 100%;
       padding: 0;
@@ -107,6 +113,7 @@
   
     .menu-items.active {
       display: flex;
+      margin-left: -2rem;
     }
   
     .menu-items li {
@@ -114,3 +121,33 @@
       padding: 10px;
     }
   }
+  @media (min-width: 768px) and (max-width: 1024px){
+    
+    nav ul li {
+      margin-left: 2rem;
+      
+    }
+    .menu-items {
+      padding: 0;
+      margin: 0;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      
+    }
+    nav{
+      
+      display: flex;
+    align-items: center;
+   
+    }
+    nav ul {
+      display: flex;
+      height: 50px;
+      
+    }
+    
+    
+  }
+  
+  

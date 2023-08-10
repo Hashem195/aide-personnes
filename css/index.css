@@ -8,7 +8,7 @@
     padding: 0;
     background: #eeeeee;
     overflow-x: hidden; /* Prevent horizontal scrolling */
-  white-space: nowrap;
+  
   }
   .container {
     min-height:100vh;
@@ -50,8 +50,21 @@
   max-width: 55rem;
 }
 @media (max-width: 768px) {
+  .container {
+    
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .column {
+    margin: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+  }
   .column img {
     min-height: auto;
+    width: 100%;
   }
 
   #text1,
