@@ -75,3 +75,24 @@ body{
   .download-button:hover{
     background-color: #333;
   }
+  @media (max-width: 768px) {
+    .activity {
+      flex-direction: column; /* Change flex direction to stack content vertically */
+      text-align: center; /* Center the content */
+    }
+  
+    .description-wrapper img {
+      max-width: 100%; /* Adjust image width to fit smaller screens */
+      margin: 10px auto; /* Center the image horizontally and add margin */
+    }
+  
+    .description-right {
+      padding-left: 0; /* Remove padding for smaller screens */
+      margin-top: 15px; /* Adjust margin for spacing */
+    }
+  
+    #aperçu, #aperçu2 {
+      text-align: center; /* Center text */
+    }
+  }
+  
