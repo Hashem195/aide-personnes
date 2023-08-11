@@ -140,23 +140,4 @@
     transform: translate3d(0, 0, 0);
   }
   
-  @media screen and (max-width: 900px) {
-    .slideshow-container .mypics {
-      width: calc(100% / 2);
-    }
-    
-    .next {
-      right: 12px;
-    }
-  }
-  
-  @media screen and (max-width: 650px) {
-    .slideshow-container .mypics {
-      width: 100%;
-    }
-    
-    .next {
-      right: 6px;
-    }
-  }
-  
+ 
