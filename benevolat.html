@@ -1,254 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/benevolat.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="manifest" href="favicon/site.webmanifest">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/benevolat.css" />
+    <script defer src="js/header.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
     <script defer src="js/form.js"></script>
     <title>Bénévolat</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <!-- logo section -->
-            <div class="logo">
-                <a href="index.html"><img src="imgs/logo.gif" alt="Logo"></a>
-            </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="souvenir.html">Souvenir</a></li>
-                <li><a href="tuto.html">Tuto</a></li>
-                <li><a href="Activites.html">Activités</a></li>
-                <li><a href="sante.html">Santé</a></li>
-                <li><a href="contact.html">Connection</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <div class="logo">
+          <a href="index.html"><img src="imgs/logo.gif" alt="Logo" /></a>
+        </div>
+        <div class="mobile-menu">
+          <ul class="menu-items">
+            <li><a href="tuto.html">Tuto</a></li>
+            <li><a href="souvenir.html">Souvenir</a></li>
+            <li><a href="Activites.html">Activités</a></li>
+            <li><a href="benevolat.html">Bénévolat</a></li>
+            <li><a href="sante.html">Santé</a></li>
+            <li><a href="contact.html">Connection</a></li>
+          </ul>
+          <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <div class="container">
-        <h1>Devenez Bénévole pour l'Aide aux Personnes Âgées</h1>
-        
-        <section id="phone-call">
-            <h2>Programmer des Appels Téléphoniques</h2>
-            <p class="texto">Les bénévoles peuvent s'inscrire pour avoir des conversations téléphoniques régulières avec des personnes âgées qui se sentent seules ou isolées.</p>
-            <!-- Formulaire d'inscription pour les appels téléphoniques -->
-            <button>
-                <div class="Inscription">
-                    Inscription
-                </div>
-            </button>
-            <form class="formu" action="#" method="POST">
-                <div class="name">
-                    <div>
-                        <label for="nom">Nom :</label>
-                        <input type="text" id="nom" required>
-                    </div>
-                    <div>
-                        <label for="prenom">Prénom :</label>
-                        <input type="text" id="prenom" required>
-                    </div>
-                </div>
-                <div class="Number">
-                    <div>
-                        <label for="numero">Numero :</label>
-                    </div>
-                    <div>
-                        <input type="text" id="numero" required>
-                    </div>
-                </div>
-                <div class="con">
-                    <p>Vous avez déjà un compte.</p>
-                    <a class="contact-link"href="contact.html">Se Connecter</a>
-                </div>
-                <div class="button">
-                    <button type="submit">
-                        S'inscrire
-                    </button>
-                    <button type="button" class="close-button">Annuler</button>
-                </div>
-            </form>
-        </section>
-        
-        <section id="shopping">
-            <h2>Aider pour les Courses</h2>
-            <p>Les bénévoles peuvent offrir leur aide pour faire les courses d'épicerie et d'autres articles essentiels au nom des personnes âgées qui peuvent avoir du mal à sortir.</p>
-            <!-- Formulaire d'assistance pour les courses -->
-            <button>
-                <div class="course">
-                    Inscription
-                </div>
-            </button>
-            <form class="formu1" action="#" method="POST">
-                <div class="name">
-                    <div>
-                        <label for="nom">Nom :</label>
-                        <input type="text" id="nom" required>
-                    </div>
-                    <div>
-                        <label for="prenom">Prénom :</label>
-                        <input type="text" id="prenom" required>
-                    </div>
-                </div>
-                <div class="Disponinible">
-                    <div>
-                        <label for="dispo">Disponibilité:</label>
-                    </div>
-                    <div>
-                        <input type="text" id="dispo" required>
-                    </div>
-                </div>
-                <div class="con">
-                    <p>Vous avez déjà un compte.</p>
-                    <a class="contact-link" href="contact.html">Se Connecter</a>
-                </div>
-                <div class="button1">
-                    <button type="submit">
-                        S'inscrire
-                    </button>
-                    <button type="button" class="close-button">Annuler</button>
-                </div>
-            </form>
-        </section>
-        
-        <section id="daily-tasks">
-            <h2>Aider avec les Tâches Quotidiennes</h2>
-            <p class="texto">Les bénévoles peuvent fournir de l'aide pour diverses tâches quotidiennes, telles que le ménage léger, la préparation des repas ou les courses.</p>
-            <!-- Formulaire d'inscription pour les tâches quotidiennes -->
-            <button>
-                <div class="clean">
-                    Inscription
-                </div>
-            </button>
-            <form class="formu2" action="#" method="POST">
-                <div class="name">
-                    <div>
-                        <label for="nom">Nom :</label>
-                        <input type="text" id="nom" required>
-                    </div>
-                    <div>
-                        <label for="prenom">Prénom :</label>
-                        <input type="text" id="prenom" required>
-                    </div>
-                </div>
-                <div class="Disponinible">
-                    <div>
-                        <label for="dispo">Disponibilité:</label>
-                    </div>
-                    <div>
-                        <input type="text" id="dispo" required>
-                    </div>
-                </div>
-                <div class="con">
-                    <p>Vous avez déjà un compte.</p>
-                    <a class="contact-link" href="contact.html">Se Connecter</a>
-                </div>
-                <div class="button2">
-                    <button type="submit">
-                        S'inscrire
-                    </button>
-                    <button type="button" class="close-button">Annuler</button>
-                </div>
-            </form>
-        </section>
-        
-        <section id="goods">
-            <h2>Fournir des Biens</h2>
-            <p class="texto">Les bénévoles peuvent contribuer en faisant don ou en livrant des biens essentiels, tels que de la nourriture, des vêtements ou du matériel médical, aux personnes âgées dans le besoin.</p>
-            <!-- Formulaire d'inscription pour la fourniture de biens -->
-            <button>
-                <div class="bien">
-                    Inscription
-                </div>
-            </button>
-            <form class="formu3" action="#" method="POST">
-                <div class="name">
-                    <div>
-                        <label for="nom">Nom :</label>
-                        <input type="text" id="nom" required>
-                    </div>
-                    <div>
-                        <label for="prenom">Prénom :</label>
-                        <input type="text" id="prenom" required>
-                    </div>
-                </div>
-                <div class="Disponinible">
-                    <div>
-                        <label for="dispo">Type de biens:</label>
-                    </div>
-                    <div>
-                        <input type="text" id="dispo" required>
-                    </div>
-                </div>
-                <div class="con">
-                    <p>Vous avez déjà un compte.</p>
-                    <a class="contact-link" href="contact.html">Se Connecter</a>
-                </div>
-                <div class="button3">
-                    <button type="submit">
-                        S'inscrire
-                    </button>
-                    <button type="button" class="close-button">Annuler</button>
-                </div>
-            </form>
-        </section>
+      <h1>Devenez Bénévole pour l'Aide aux Personnes Âgées</h1>
+
+      <section id="phone-call">
+        <h2>Programmer des Appels Téléphoniques</h2>
+        <p class="texto">
+          Les bénévoles peuvent s'inscrire pour avoir des conversations
+          téléphoniques régulières avec des personnes âgées qui se sentent
+          seules ou isolées.
+        </p>
+        <!-- Formulaire d'inscription pour les appels téléphoniques -->
+        <button>
+          <div class="Inscription">Inscription</div>
+        </button>
+        <form class="formu" action="#" method="POST">
+          <div class="name">
+            <div>
+              <label for="nom">Nom :</label>
+              <input type="text" id="nom" required />
+            </div>
+            <div>
+              <label for="prenom">Prénom :</label>
+              <input type="text" id="prenom" required />
+            </div>
+          </div>
+          <div class="Number">
+            <div>
+              <label for="numero">Numero :</label>
+            </div>
+            <div>
+              <input type="text" id="numero" required />
+            </div>
+          </div>
+          <div class="con">
+            <p>Vous avez déjà un compte.</p>
+            <a class="contact-link" href="contact.html">Se Connecter</a>
+          </div>
+          <div class="button">
+            <button type="submit">S'inscrire</button>
+            <button type="button" class="close-button">Annuler</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="shopping">
+        <h2>Aider pour les Courses</h2>
+        <p class="texto">
+          Les bénévoles peuvent offrir leur aide pour faire les courses
+          d'épicerie et d'autres articles essentiels au nom des personnes âgées
+          qui peuvent avoir du mal à sortir.
+        </p>
+        <!-- Formulaire d'assistance pour les courses -->
+        <button>
+          <div class="course">Inscription</div>
+        </button>
+        <form class="formu1" action="#" method="POST">
+          <div class="name">
+            <div>
+              <label for="nom">Nom :</label>
+              <input type="text" id="nom" required />
+            </div>
+            <div>
+              <label for="prenom">Prénom :</label>
+              <input type="text" id="prenom" required />
+            </div>
+          </div>
+          <div class="Disponinible">
+            <div>
+              <label for="dispo">Disponibilité:</label>
+            </div>
+            <div>
+              <input type="text" id="dispo" required />
+            </div>
+          </div>
+          <div class="con">
+            <p>Vous avez déjà un compte.</p>
+            <a class="contact-link" href="contact.html">Se Connecter</a>
+          </div>
+          <div class="button1">
+            <button type="submit">S'inscrire</button>
+            <button type="button" class="close-button">Annuler</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="daily-tasks">
+        <h2>Aider avec les Tâches Quotidiennes</h2>
+        <p class="texto">
+          Les bénévoles peuvent fournir de l'aide pour diverses tâches
+          quotidiennes, telles que le ménage léger, la préparation des repas ou
+          les courses.
+        </p>
+        <!-- Formulaire d'inscription pour les tâches quotidiennes -->
+        <button>
+          <div class="clean">Inscription</div>
+        </button>
+        <form class="formu2" action="#" method="POST">
+          <div class="name">
+            <div>
+              <label for="nom">Nom :</label>
+              <input type="text" id="nom" required />
+            </div>
+            <div>
+              <label for="prenom">Prénom :</label>
+              <input type="text" id="prenom" required />
+            </div>
+          </div>
+          <div class="Disponinible">
+            <div>
+              <label for="dispo">Disponibilité:</label>
+            </div>
+            <div>
+              <input type="text" id="dispo" required />
+            </div>
+          </div>
+          <div class="con">
+            <p>Vous avez déjà un compte.</p>
+            <a class="contact-link" href="contact.html">Se Connecter</a>
+          </div>
+          <div class="button2">
+            <button type="submit">S'inscrire</button>
+            <button type="button" class="close-button">Annuler</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="goods">
+        <h2>Fournir des Biens</h2>
+        <p class="texto">
+          Les bénévoles peuvent contribuer en faisant don ou en livrant des
+          biens essentiels, tels que de la nourriture, des vêtements ou du
+          matériel médical, aux personnes âgées dans le besoin.
+        </p>
+        <!-- Formulaire d'inscription pour la fourniture de biens -->
+        <button>
+          <div class="bien">Inscription</div>
+        </button>
+        <form class="formu3" action="#" method="POST">
+          <div class="name">
+            <div>
+              <label for="nom">Nom :</label>
+              <input type="text" id="nom" required />
+            </div>
+            <div>
+              <label for="prenom">Prénom :</label>
+              <input type="text" id="prenom" required />
+            </div>
+          </div>
+          <div class="Disponinible">
+            <div>
+              <label for="dispo">Type de biens:</label>
+            </div>
+            <div>
+              <input type="text" id="dispo" required />
+            </div>
+          </div>
+          <div class="con">
+            <p>Vous avez déjà un compte.</p>
+            <a class="contact-link" href="contact.html">Se Connecter</a>
+          </div>
+          <div class="button3">
+            <button type="submit">S'inscrire</button>
+            <button type="button" class="close-button">Annuler</button>
+          </div>
+        </form>
+      </section>
     </div>
 
     <footer>
-        <div class="footer-logo">
-            <a href="index.html"><img id="footer-logo" src="imgs/logo-nobg.png" alt="Logo"></a>
+      <div class="footer-logo">
+        <a href="index.html"
+          ><img id="footer-logo" src="imgs/logo-nobg.png" alt="Logo"
+        /></a>
+      </div>
+      <hr class="footer-line" />
+      <div class="footer-sections">
+        <div class="footer-section">
+          <h3>A Propos</h3>
+          <div class="section-line"></div>
+          <div class="pergraph">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
         </div>
-        <hr class="footer-line">
-        <div class="footer-sections">
-            <div class="footer-section">
-                <h3>A Propos</h3>
-                <div class="section-line"></div>
-                <div class="pergraph">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-                </div>
-            </div>
-            <div class="footer-section">
-                <h3>Liens</h3>
-                <div class="section-line"></div>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="tuto.html">Tuto</a></li>
-                    <li><a href="souvenir.html">Souvenir</a></li>
-                    <li><a href="benevolat.html">Bénévolat</a></li>
-                    <li><a href="sante.html">Santé</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <div class="section-line"></div>
-                <p>Adresse : 102 rue de cc, Lyon</p>
-                <p>Téléphone : +33 12 23 89 92 91</p>
-                <p>Email : enterprise@eur.fr</p>
-            </div>
-            <div class="footer-section">
-                <h3>Newsletter</h3>
-                <div class="section-line"></div>
-                <form id="footer-form">
-                    <input type="email" placeholder="Votre email">
-                    <button type="submit">S'abonner</button>
-                </form>
-                <div class="social-icons">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
+        <div class="footer-section">
+          <h3>Liens</h3>
+          <div class="section-line"></div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tuto.html">Tuto</a></li>
+            <li><a href="souvenir.html">Souvenir</a></li>
+            <li><a href="benevolat.html">Bénévolat</a></li>
+            <li><a href="sante.html">Santé</a></li>
+          </ul>
         </div>
-        <hr class="footer-line">
-        <p class="copyright">
-            &copy; 2023 Bedriendev. Tous droits réservés.
-        </p>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <div class="section-line"></div>
+          <p>Adresse : 102 rue de cc, Lyon</p>
+          <p>Téléphone : +33 12 23 89 92 91</p>
+          <p>Email : enterprise@eur.fr</p>
+        </div>
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <div class="section-line"></div>
+          <form id="footer-form">
+            <input type="email" placeholder="Votre email" />
+            <button type="submit">S'abonner</button>
+          </form>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-line" />
+      <p class="copyright">&copy; 2023 Bedriendev. Tous droits réservés.</p>
     </footer>
-</body>
+  </body>
 </html>

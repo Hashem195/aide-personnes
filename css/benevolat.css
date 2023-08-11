@@ -136,3 +136,43 @@ label {
 .formu {
   display: none;
 }
+@media (min-width: 768px) and (max-width: 1024px){
+  /* Styles for tablets and smaller screens */
+  h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  h2{
+    font-size: 1.2rem;
+  }
+  .texto{
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+  .name {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Styles for phones */
+  h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  h2{
+    font-size: 1.2rem;
+  }
+  .texto{
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+  .name {
+    flex-direction: column;
+  }
+  .name div {
+    width: 100%;
+  }
+
+}
+  

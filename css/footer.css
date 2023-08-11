@@ -1,6 +1,7 @@
 footer {
     padding-top: 10px;
     margin-top: auto;
+    margin:10px;
   }
   
   .footer-logo {
@@ -114,7 +115,6 @@ footer {
   /* Responsive styles */
  @media (max-width:768px) {
 .footerMain{
-width: 100%;
 height: auto;
 margin:10px;
 }
@@ -129,6 +129,10 @@ margin:10px;
 }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
+  .footerMain{
+    height: auto;
+    margin:10px;
+    }
   .footer-section {
     flex-basis: calc(40% - 20px); /* Adjust for margins or paddings */
   }
