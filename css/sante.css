@@ -1,143 +1,78 @@
 * {
-    padding: 0px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  
+  margin: 0;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eeeeee;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Oswald", sans-serif;
+}
+.container-intro {
+  margin: 1.25rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1.875rem;
+}
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+.intro img {
+  height: 23.75rem;
+  width: 31.25rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.pergraph {
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 2.5rem;
+}
+
+.titlePergraph a {
+  text-decoration: none;
+  color: black;
+}
+.titlePergraph {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+/* For smaller screens */
+@media (max-width: 768px) {
   body {
-    margin-right: 15px;
-    margin-left: 15px;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    font-family: 'Oswald', sans-serif;
-  }
-  .container-intro{
-    margin: 20px;
-    display: grid; 
-    grid-template-columns: auto auto; 
-    gap: 30px;
-  }
-  h1{
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    margin-bottom: 55px;
-  }
-  .intro img { 
-    height: 380px;
-    width: 500px;
-    margin: 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  .pergraph{
-    font-size: 1.2rem;
-    text-decoration: none;
-    font-weight: 500;
-    font-family:'Times New Roman', Times, serif;
-    padding-top: 40px;
+    margin: 0;
   }
   
-  .slideshow-container {
-    max-width: 980px;
-    position: relative;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
+  .container-intro {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
   
-  .mySlides {
-    max-height: 550px;
-    object-fit: cover;
-    overflow: hidden;
-    display: none;
+  .intro img {
+    width: 100%;
+    height: auto;
+    margin: 0;
   }
-  
-  .mySlides .mypics {
-    height: 600px;
-    object-fit: fill;
-    user-select: none;
-    width: calc(100% / 2);
-    margin-left: 14px;
-    border-radius: 25px;
-  }
-  
-  .mypics {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    image-rendering: smooth;
-  }
-  
-  .prev,
-  .next {
-    cursor: pointer;
-    top: 50%;
-    position: absolute;
-    background: rgba(153, 152, 152, 0.493);
-    height: 44px;
-    width: 44px;
-    line-height: 44px;
-    text-align: center;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    transform: translateY(-50%);
-  }
-  
-  .prev {
-    left: -12px;
-  }
-  
-  .next {
-    right: 12px; /* Adjust this value as needed */
-  }
-  
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.342);
-  }
-  
-  .text {
-    color: #000000;
-    font-size: 20px;
-    padding: 14px;
-    width: 300px;
-    height: 350px;
-    text-align: center;
-    float: right;
-    border-radius: 10px;
-    object-fit: contain;
-    overflow: auto;
-    margin: 40px;
-  }
-  
-  .text:hover {
-    background-color: hsla(0, 0%, 34%, 0.369);
-  }
-  
-  .text::-webkit-scrollbar {
-    width: 12px;
-    background-color: transparent;
-  }
-  
-  .text::-webkit-scrollbar-thumb {
-    border-radius: 20px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.65);
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.65);
-  }
-  
-  .text::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.65);
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.65);
-    border-radius: 20px;
-  }
-  
-  .fade {
-    animation-timing-function: ease-in-out;
-  }
-  
-  .slideshow-container,
-  .mySlides {
-    transform: translate3d(0, 0, 0);
-  }
-  
+}
+
+/* For larger screens */
+@media (min-width: 1200px) {
  
+  
+  .container-intro {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
