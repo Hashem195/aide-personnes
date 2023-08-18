@@ -34,7 +34,7 @@ body {
   }
   
   .contact-form{
-      background-color: #202A44;
+      background-color: black;
       position: relative;
   }
   .contact-form:before{
@@ -143,7 +143,7 @@ body {
       opacity: 0;
       transition: 0.3s;
       height: 5px;
-      background-color: #202A44;
+      background-color: #000000;
       top:50%;
       transform: translateY(-50%);
   
@@ -170,6 +170,7 @@ body {
   .contact-info {
       padding: 1.3rem 1.2rem;
       position: relative;
+      background: whitesmoke;
   }
   .contact-info .title{
       color:#000000 ;
@@ -201,17 +202,20 @@ body {
       display: flex;
       margin-top: 0.5rem; 
       
+      align-items: center;
+      justify-content: center;
   }
   .social-icons2 a{
       width: 45px;
       height: 40px;
       border-radius: 50%;
-      background: linear-gradient(45deg,#3C5291,#f1f1f1);
+      background: linear-gradient(45deg,#5f6166,#f1f1f1);
       color: #000;
       text-align: center;
-      line-height: 35px;
+      line-height: 40px;
       margin-right: 0.5rem;
       transition: .3s;
+      
   }
   .social-icons2 a:hover{
       transform: scale(1.1);

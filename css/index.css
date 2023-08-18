@@ -27,7 +27,8 @@
     margin: 15px;
     border: 1px solid #ccc;
     padding: 10px;
-    
+    background: #c3cece;
+    border-radius:5px;
   }
   
   .column img {
